@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casa Carlota - Café de especialidad en Recoleta Norte, Buenos Aires. Bagels artesanales, café de calidad y un ambiente que te hace sentir en casa. Descubrí tu nuevo café favorito.">
+    <title>Casa Carlota | Café de Especialidad en Recoleta Norte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header fijo -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <a href="#hero" class="header__logo">
+                <span class="logo-text">Casa Carlota</span>
+            </a>
+            
+            <nav class="header__nav" id="mainNav">
+                <a href="#especialidades" class="nav__link">Especialidades</a>
+                <a href="#menu" class="nav__link">Menú</a>
+                <a href="#ambiente" class="nav__link">Ambiente</a>
+                <a href="#momentos" class="nav__link">Momentos</a>
+                <a href="#contacto" class="nav__link">Contacto</a>
+            </nav>
+            
+            <a href="https://wa.me/5491154056602?text=Hola%20Casa%20Carlota!%20Quisiera%20hacer%20una%20consulta" class="header__cta btn btn--primary">
+                Reservar Mesa
+            </a>
+            
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero__bg-container">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlwLpkk-e7NY3sLLmoy16XfOqF40m7nhyoOyBwyucWbWq_Z6a8SW4t0BuM4zyJA6xZBXArWOnPXlZG-ZeE8X1u1mh13MDYjFem3hB2p-7sVTEhRONpyxgbn-jChq3gUgcy7daE1=s1360-w1360-h1020-rw" 
+                 alt="Fachada de Casa Carlota en Recoleta Norte" 
+                 class="hero__image"
+                 loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+        
+        <div class="hero__content">
+            <div class="hero__text-container">
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Tu café favorito</span>
+                    <span class="hero__title-line hero__title-line--accent">está a la vuelta</span>
+                    <span class="hero__title-line">de la esquina.</span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    En Casa Carlota combinamos la calidez de un café de barrio con la rigurosidad de un café de especialidad. 
+                    Bagels artesanales, café de origen y ese ambiente que te hace sentir en casa.
+                </p>
+                
+                <div class="hero__cta-group">
+                    <a href="#menu" class="btn btn--primary btn--large">
+                        Ver Nuestro Menú
+                    </a>
+                    <a href="https://wa.me/5491154056602?text=Hola!%20Quisiera%20reservar%20una%20mesa%20en%20Casa%20Carlota" class="btn btn--secondary btn--large">
+                        Reservar Mesa
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero__rating">
+                <div class="rating__stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star star--half">★</span>
+                </div>
+                <span class="rating__text">4.6</span>
+                <span class="rating__count">752 reseñas en Google</span>
+            </div>
+        </div>
+        
+        <div class="hero__scroll-indicator">
+            <span class="scroll-text">Descubrí más</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Diferenciales -->
+    <section id="diferenciales" class="section diferenciales">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Por qué elegirnos</span>
+                <h2 class="section__title">Tres razones para quedarte</h2>
+            </div>
+            
+            <div class="diferenciales__grid">
+                <div class="diferencial" data-animate>
+                    <div class="diferencial__icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-3.5l6-4.5-6-4.5v9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial__title">Café de Origen</h3>
+                    <p class="diferencial__text">
+                        Seleccionamos granos de productores directos, tostados artesanalmente para resaltar notas únicas. 
+                        Cada taza cuenta una historia de origen.
+                    </p>
+                </div>
+                
+                <div class="diferencial" data-animate>
+                    <div class="diferencial__icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial__title">Bagels Artesanales</h3>
+                    <p class="diferencial__text">
+                        Horneados con amor y paciencia, nuestros bagels son el corazón de nuestra carta. 
+                        Textura perfecta, sabor auténtico, combinaciones que enamoran.
+                    </p>
+                </div>
+                
+                <div class="diferencial" data-animate>
+                    <div class="diferencial__icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial__title">Ambiente Único</h3>
+                    <p class="diferencial__text">
+                        Estilo subway neoyorquina con alma porteña. Un espacio cómodo con buena música, detalles cuidados 
+                        y esa vibra que te hace querer quedarte más tiempo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Nuestra carta</span>
+                <h2 class="section__title">Descubrí lo que tenemos para vos</h2>
+                <p class="section__subtitle">Desde desayunos contundentes hasta café de especialidad. Todo preparado con ingredientes frescos y mucho cariño.</p>
+            </div>
+            
+            <div class="menu__tabs">
+                <button class="menu__tab menu__tab--active" data-tab="especiales">Especiales</button>
+                <button class="menu__tab" data-tab="cafe">Café</button>
+                <button class="menu__tab" data-tab="pasteleria">Pastelería</button>
+                <button class="menu__tab" data-tab="otros">Bebidas</button>
+            </div>
+            
+            <div class="menu__content">
+                <!-- Especiales -->
+                <div class="menu__category menu__category--active" id="especiales">
+                    <div class="menu__items-grid">
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-image">
+                                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmR8cHYbgmntHupuG24RosykEWkEBgGQ_9NiIhCGn_-yYf_XYp5W1hkQEw3yNg2usBTToKlBqrkqHPAX_46QkHZz5838CH6Taa8mKrfwbn_zESxU6aamxE5a3I94tR4oA8SwotVtQ=s1360-w1360-h1020-rw" 
+                                     alt="Desayuno completo en Casa Carlota" loading="lazy">
+                            </div>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Latte o Americano + 2 Medialunas</h3>
+                                <p class="menu__item-description">Combinación perfecta para empezar el día. Café de calidad con medialunas de manteca recién horneadas.</p>
+                                <span class="menu__item-tag">Combos Desayunos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-image">
+                                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmcZoQbaxf8yQOswrst7m3KNdtcouGHBp7_NeuR67GhhA1pfWXkuDZgWYBKcEoOIRtFJE4mQTvICfqouwufsYV6bRMwvNtL6-9E4F6DTzRLJBsshbDTVk_oF4JLb_O8RssqS5Jj5Q=s1360-w1360-h1020-rw" 
+                                     alt="Medialunas frescas" loading="lazy">
+                            </div>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Bagel de Salmón Ahumado</h3>
+                                <p class="menu__item-description">Salmón, rúcula, queso brie y queso tipo philadelphia. Nuestro bagel insignia.</p>
+                                <span class="menu__item-tag">Bagels</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-image">
+                                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm8oOtfLuGlA-f8Hcge5EpOmk9ca_NLFXveO3dzpfjmLACP73C-tdF4UzFK8fJhHe6d9rH13mRvGjwuoIPd05Z0heqWlk1iqHgqgs95I8loYnisVYahjLxrlQyqb-F3DgG8VMNE=s1360-w1360-h1020-rw" 
+                                     alt="Barista preparando café" loading="lazy">
+                            </div>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Avocado Toast</h3>
+                                <p class="menu__item-description">Queso untable, palta fresca, cherry y semillas. Simple, fresco, delicioso.</p>
+                                <span class="menu__item-tag">Especiales</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-image">
+                                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkhAiSW_fJBNaZ56RvKGlPTJrN8163Pa1F_HMrSlkKt6lcvc9P59eHgUebpFH09bJYBPWHqBN60Q5rfspnyvoqqk2jMXLmTeJGKpu4ooUfPlpsTw9MxpDBvLEPXkq2XWFRQs4M=s1360-w1360-h1020-rw" 
+                                     alt="Batido con torta" loading="lazy">
+                            </div>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Yogurt con Granola y Frutas</h3>
+                                <p class="menu__item-description">Yogurt natural, granola crocante y frutas de estación. Nutritivo y refrescante.</p>
+                                <span class="menu__item-tag">Saludable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Café -->
+                <div class="menu__category" id="cafe">
+                    <div class="menu__items-grid">
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Flat White</h3>
+                                <p class="menu__item-description">Doble shot de café con leche. Textura sedosa, sabor intenso pero equilibrado.</p>
+                                <span class="menu__item-tag">Specialty Coffee</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Latte Macchiato</h3>
+                                <p class="menu__item-description">Shot de café con más leche (lagrima). Clásico reconfortante.</p>
+                                <span class="menu__item-tag">Specialty Coffee</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Cold Brew</h3>
+                                <p class="menu__item-description">Café filtrado frío, suave y refrescante. Ideal para los días de calor.</p>
+                                <span class="menu__item-tag">Specialty Coffee</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Coffee & Tonic</h3>
+                                <p class="menu__item-description">Shot de café con agua tónica y limón. Una combinación sorprendente y refrescante.</p>
+                                <span class="menu__item-tag">Specialty Coffee</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Café Filtrado</h3>
+                                <p class="menu__item-description">Prensa francesa o V60. Para los que disfrutan del café en su forma más pura.</p>
+                                <span class="menu__item-tag">Specialty Coffee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastelería -->
+                <div class="menu__category" id="pasteleria">
+                    <div class="menu__items-grid">
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-image">
+                                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkkvLJHxmuIWYDTUMbJFQjYYrvWyjX10kmzzxEQKneHy3YRLK3wZ2qr5vMZik5o8cwl8FNeuPOJvSKmJ_QYYTS5yT6wmYLgUObvuafjC9KOGx2X1wqx8nH9R3Qcp40ooOXNyUmm=s1360-w1360-h1020-rw" 
+                                     alt="Galletitas artesanales" loading="lazy">
+                            </div>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Budín de Limón y Amapola</h3>
+                                <p class="menu__item-description">Nuestro favorito. Esponjoso, fresco, con el balance perfecto entre dulce y cítrico.</p>
+                                <span class="menu__item-tag">Pastelería</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Alfajor de Nuez XL con DDL</h3>
+                                <p class="menu__item-description">Generoso, crujiente por fuera, tierno por dentro. Dulce de leche generoso.</p>
+                                <span class="menu__item-tag">Pastelería</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Cookie de Matcha y Pistacho</h3>
+                                <p class="menu__item-description">Vegano. Un cookies contemporáneo con sabores que sorprenden.</p>
+                                <span class="menu__item-tag">Pastelería Vegana</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Roll de Canela y Caramelo</h3>
+                                <p class="menu__item-description">Vegano. Especiado, dulce, perfecto para acompañar un café.</p>
+                                <span class="menu__item-tag">Pastelería Vegana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bebidas -->
+                <div class="menu__category" id="otros">
+                    <div class="menu__items-grid">
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Limonada</h3>
+                                <p class="menu__item-description">Fresca, natural, perfecta para refrescarte.</p>
+                                <span class="menu__item-tag">Bebidas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Exprimido de Naranja</h3>
+                                <p class="menu__item-description">Recién exprimido, puro sabor cítrico.</p>
+                                <span class="menu__item-tag">Bebidas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Licuados</h3>
+                                <p class="menu__item-description">Con frutas de estación. Nutritivos y deliciosos.</p>
+                                <span class="menu__item-tag">Bebidas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu__item" data-animate>
+                            <div class="menu__item-content">
+                                <h3 class="menu__item-title">Chocolate Caliente o Frío</h3>
+                                <p class="menu__item-description">Cremoso, intenso, reconfortante.</p>
+                                <span class="menu__item-tag">Bebidas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu__footer">
+                <p class="menu__note">Precios disponibles en el local. Consultá por combinaciones especiales.</p>
+                <a href="https://wa.me/5491154056602?text=Hola!%20Quisiera%20hacer%20un%20pedido%20para%20llevar" class="btn btn--primary">
+                    Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto Estrella -->
+    <section id="especialidad" class="section especialidad">
+        <div class="container">
+            <div class="especialidad__content">
+                <div class="especialidad__text">
+                    <span class="section__label">Nuestra especialidad</span>
+                    <h2 class="especialidad__title">Los Bagels de Casa Carlota</h2>
+                    <p class="especialidad__description">
+                        No son bagels comunes. Son bagels que horneamos con paciencia, 
+                        que seleccionamos con cariño y que combinamos con ingredientes frescos 
+                        que respetan cada sabor. Desde el clásico de salmón ahumado hasta 
+                        opciones vegetarianas que sorprenden.
+                    </p>
+                    <ul class="especialidad__features">
+                        <li class="especialidad__feature">Horneados artesanalmente cada mañana</li>
+                        <li class="especialidad__feature">Ingredientes frescos de proveedores locales</li>
+                        <li class="especialidad__feature">Combinaciones únicas que no encontrarás en otro lado</li>
+                        <li class="especialidad__feature">Opciones vegetarianas y sin TACC</li>
+                    </ul>
+                    <a href="https://wa.me/5491154056602?text=Hola!%20Quisiera%20reservar%20un%20bagel%20para%20hoy" class="btn btn--primary">
+                        Reservá tu Bagel
+                    </a>
+                </div>
+                
+                <div class="especialidad__image-container">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnwVVxxj8mQwPcNoNJif_o6BRRF9i4AoCRgklVm3e3SaA0Rn6ZP8OGn9nd1hnHiWUA-HLBst5gy9_4hp76-TunAtVfwSjMx93HPwqIhF_fD_7rVlUThD_qLUPeprNN5X_yLryTQ=s1360-w1360-h1020-rw" 
+                         alt="Interior acogedor de Casa Carlota" 
+                         class="especialidad__image"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="ambiente" class="section galeria">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Nuestro espacio</span>
+                <h2 class="section__title">Un rincón que se siente hogar</h2>
+            </div>
+            
+            <div class="galeria__grid">
+                <div class="galeria__item galeria__item--large" data-animate>
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkJIInU_cyRoIIEpBFflQmqWBjLsnIXQbbrPhwVkPvbgfp4vCDHdwcUt4dkTUil8hiw-KVjR5y8DCQeyR0JQMqvQEmT2KjHDfW52E1vjAQ4J1_ADcSdZwDxZbZniOGn5UE6mYGheQ=s1360-w1360-h1020-rw" 
+                         alt="Interior de Casa Carlota" loading="lazy">
+                    <div class="galeria__overlay">
+                        <span class="galeria__caption">Ambiente cálido y acogedor</span>
+                    </div>
+                </div>
+                
+                <div class="galeria__item" data-animate>
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl93BxcZ6CL0Wly1_VJkLWnbNblcRLUxcz9WbDy7qe8re8h2juDamUxnwFGGu6Zfik75075M3fpGakuGti_Gp54IUHsXVUlqOZBLu1LT73pyFlp5hlcv-kwYBFZti-kpOcYNHi7=s1360-w1360-h1020-rw" 
+                         alt="Café preparado con arte" loading="lazy">
+                    <div class="galeria__overlay">
+                        <span class="galeria__caption">Café de origen</span>
+                    </div>
+                </div>
+                
+                <div class="galeria__item" data-animate>
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkWMIBzRpR6-JBEFZKWoJl46aZEPwGOumMODVPKN04OBcOZwcn9fdTmPsqOTuDmJKXZjGrGM7_XB3srQ1bJmxXNu97J8Eg1tIAXtazsnVSq5zcHMEsdj6FJJozo7Hlo2iy74y__=s1360-w1360-h1020-rw" 
+                         alt="Mesas cómodas para trabajar" loading="lazy">
+                    <div class="galeria__overlay">
+                        <span class="galeria__caption">Espacio para trabajar</span>
+                    </div>
+                </div>
+                
+                <div class="galeria__item" data-animate>
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWky6evEhoszu8FCtV-bB_Y38GLUI4wN87H6K_zMVzo48hyaQvpB-yl03WKm8Y1xld2X5-W6z5Lf_qBi7hia3rM_lbieZgPGZCxa1Xc1mH4mc-B45_W_fXnf0XEDHTORzYaAnKIYaQ_eGnFF=s1360-w1360-h1020-rw" 
+                         alt="Detalles del local" loading="lazy">
+                    <div class="galeria__overlay">
+                        <span class="galeria__caption">Detalles que importan</span>
+                    </div>
+                </div>
+                
+                <div class="galeria__item galeria__item--large" data-animate>
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlj88oTJP31o5_GcWcPHisNq7jnX1Ps_h34owRMaemQGQtE-xNmJhQcdnCc3dnfxniSWOnL2ykFL-0LPoGDYO6vK6zodJgXPwNNwGL2MRY4Wtp156DHTIk-MZkiBy4V2EYp17rY5g=s1360-w1360-h1020-rw" 
+                         alt="Estación barista" loading="lazy">
+                    <div class="galeria__overlay">
+                        <span class="galeria__caption">Estación Barista</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section testimonios">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Lo que dicen nuestros vecinos</span>
+                <h2 class="section__title">Testimonios reales</h2>
+                <div class="rating-summary">
+                    <div class="rating-summary__stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star star--half">★</span>
+                    </div>
+                    <span class="rating-summary__score">4.6</span>
+                    <span class="rating-summary__text">basado en 752 reseñas de Google</span>
+                </div>
+            </div>
+            
+            <div class="testimonios__grid">
+                <div class="testimonio" data-animate>
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">MG</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">María G.</h4>
+                            <span class="testimonio__date">hace 2 semanas</span>
+                        </div>
+                        <div class="testimonio__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonio__text">
+                        "Excelente lugar para desayunar, almorzar y merendar! La cocina es exquisita y la atención excelente! 
+                        Hace más de 2 años que conocemos este lugar y volvemos siempre que podemos!"
+                    </p>
+                </div>
+                
+                <div class="testimonio" data-animate>
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">CL</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">Carlos L.</h4>
+                            <span class="testimonio__date">hace 1 mes</span>
+                        </div>
+                        <div class="testimonio__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonio__text">
+                        "A veces la simpleza supera lo extravagante y moderno, este es el caso. Lugar cómodo con buena música 
+                        y atención, mi pedido no tardó en llegar y el bagel estaba bien. Muy recomendable."
+                    </p>
+                </div>
+                
+                <div class="testimonio" data-animate>
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">AR</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">Ana R.</h4>
+                            <span class="testimonio__date">hace 3 semanas</span>
+                        </div>
+                        <div class="testimonio__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonio__text">
+                        "Muy lindo lugar, fuimos porque nos recomendaron los bagels y, a pesar de que llegamos más temprano, 
+                        nos los prepararon y estaban riquísimos. Excelente atención, muy amables ambos. Volveré a probar más!"
+                    </p>
+                </div>
+                
+                <div class="testimonio" data-animate>
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">JP</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">Jorge P.</h4>
+                            <span class="testimonio__date">hace 1 semana</span>
+                        </div>
+                        <div class="testimonio__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonio__text">
+                        "El lugar es cómodo, la comida muy rica, pedí un bagel de salmón y era grande y estaba muy rico. 
+                        Lugar ideal para hacer una pausa y relajarse. Ambiente acogedor, con todos los detalles muy cuidados."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momentos -->
+    <section id="momentos" class="section momentos">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Elegí tu momento</span>
+                <h2 class="section__title">Siempre hay una razón para venir</h2>
+            </div>
+            
+            <div class="momentos__grid">
+                <div class="momento" data-animate>
+                    <div class="momento__image-container">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmR8cHYbgmntHupuG24RosykEWkEBgGQ_9NiIhCGn_-yYf_XYp5W1hkQEw3yNg2usBTToKlBqrkqHPAX_46QkHZz5838CH6Taa8mKrfwbn_zESxU6aamxE5a3I94tR4oA8SwotVtQ=s1360-w1360-h1020-rw" 
+                             alt="Desayuno en Casa Carlota" loading="lazy">
+                    </div>
+                    <div class="momento__content">
+                        <h3 class="momento__title">El Desayuno de la Mañana</h3>
+                        <p class="momento__description">
+                            Arrancá el día con energía. Nuestros combos de desayuno incluyen café de especialidad 
+                            y medialunas recién horneadas. Lunes a viernes de 8:30 a 11:00.
+                        </p>
+                        <div class="momento__hours">
+                            <span class="momento__hours-label">Horario especial:</span>
+                            <span class="momento__hours-time">8:30 - 11:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="momento" data-animate>
+                    <div class="momento__image-container">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWky6evEhoszu8FCtV-bB_Y38GLUI4wN87H6K_zMVzo48hyaQvpB-yl03WKm8Y1xld2X5-W6z5Lf_qBi7hia3rM_lbieZgPGZCxa1Xc1mH4mc-B45_W_fXnf0XEDHTORzYaAnKIYaQ_eGnFF=s1360-w1360-h1020-rw" 
+                             alt="Trabajando en Casa Carlota" loading="lazy">
+                    </div>
+                    <div class="momento__content">
+                        <h3 class="momento__title">La Oficina Fuera de Casa</h3>
+                        <p class="momento__description">
+                            WiFi estable, enchufes disponibles, café de calidad y un ambiente que inspira. 
+                            El lugar perfecto para los que trabajan remoto o necesitan un cambio de aire.
+                        </p>
+                        <div class="momento__hours">
+                            <span class="momento__hours-label">Disponible todo el día:</span>
+                            <span class="momento__hours-time">8:30 - 19:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="momento" data-animate>
+                    <div class="momento__image-container">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl93BxcZ6CL0Wly1_VJkLWnbNblcRLUxcz9WbDy7qe8re8h2juDamUxnwFGGu6Zfik75075M3fpGakuGti_Gp54IUHsXVUlqOZBLu1LT73pyFlp5hlcv-kwYBFZti-kpOcYNHi7=s1360-w1360-h1020-rw" 
+                             alt="Merienda en Casa Carlota" loading="lazy">
+                    </div>
+                    <div class="momento__content">
+                        <h3 class="momento__title">La Merienda con Amigos</h3>
+                        <p class="momento__description">
+                            La tarde perfecta no existe sin un buen café y algo rico para compartir. 
+                            Pastelería artesanal, bagels y ese ambiente que hace que las horas pasen volando.
+                        </p>
+                        <div class="momento__hours">
+                            <span class="momento__hours-label">Horario ideal:</span>
+                            <span class="momento__hours-time">16:00 - 19:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="section historia">
+        <div class="container">
+            <div class="historia__content">
+                <div class="historia__text">
+                    <span class="section__label">Nuestra historia</span>
+                    <h2 class="historia__title">De barrio para el mundo</h2>
+                    <p class="historia__description">
+                        Casa Carlota nació de una idea simple: crear un lugar donde la gente se sienta en casa. 
+                        Ubicados en Recoleta Norte, combinamos la calidez de un café de barrio porteño con 
+                        la rigurosidad de un café de especialidad.
+                    </p>
+                    <p class="historia__description">
+                        La estética subway neoyorquina no es solo decoración, es una declaración de intenciones: 
+                        creemos que lo cotidiano puede ser extraordinario. Cada taza de café, cada bagel, cada detalle 
+                        está pensado para convertir una visita常规 en un momento memorable.
+                    </p>
+                    <p class="historia__description">
+                        Somos un café para vecinos, para trabajadores remotos, para amantes del café que buscan 
+                        calidad sin pretensiones. Porque lo mejor de la vida a veces está a la vuelta de la esquina.
+                    </p>
+                </div>
+                
+                <div class="historia__team">
+                    <h3 class="historia__team-title">El equipo detrás de la barra</h3>
+                    <div class="historia__team-grid">
+                        <div class="team-member" data-animate>
+                            <div class="team-member__avatar">LC</div>
+                            <h4 class="team-member__name">Lucas C.</h4>
+                            <p class="team-member__role">Barista Principal</p>
+                        </div>
+                        
+                        <div class="team-member" data-animate>
+                            <div class="team-member__avatar">MR</div>
+                            <h4 class="team-member__name">Martín R.</h4>
+                            <p class="team-member__role">Chef Pastelero</p>
+                        </div>
+                        
+                        <div class="team-member" data-animate>
+                            <div class="team-member__avatar">VS</div>
+                            <h4 class="team-member__name">Valentina S.</h4>
+                            <p class="team-member__role">Coordinadora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Contacto</span>
+                <h2 class="section__title">Vení a conocernos</h2>
+            </div>
+            
+            <div class="contacto__grid">
+                <div class="contacto__info">
+                    <div class="contacto__item" data-animate>
+                        <div class="contacto__icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="contacto__text">
+                            <h4 class="contacto__label">Dirección</h4>
+                            <p class="contacto__value">Montevideo 960, Recoleta Norte</p>
+                            <p class="contacto__detail">C1019 Cdad. Autónoma de Buenos Aires</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto__item" data-animate>
+                        <div class="contacto__icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="contacto__text">
+                            <h4 class="contacto__label">WhatsApp</h4>
+                            <p class="contacto__value">
+                                <a href="https://wa.me/5491154056602" class="contacto__link">011 5405-6602</a>
+                            </p>
+                            <p class="contacto__detail">Respuesta inmediata</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto__item" data-animate>
+                        <div class="contacto__icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="contacto__text">
+                            <h4 class="contacto__label">Horarios</h4>
+                            <p class="contacto__value">Lunes a Viernes: 8:30 - 19:00</p>
+                            <p class="contacto__detail">Sábados y Domingos: Cerrado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto__social">
+                        <a href="https://www.instagram.com/cafedelmedio/" target="_blank" class="contacto__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5491154056602" target="_blank" class="contacto__social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contacto__map" data-animate>
+                    <iframe
+                        src="https://maps.google.com/maps?q=Montevideo+960+Recoleta+Norte+Buenos+Aires&output=embed"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#hero" class="footer__logo">Casa Carlota</a>
+                    <p class="footer__tagline">Tu café favorito está a la vuelta de la esquina.</p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/cafedelmedio/" target="_blank" class="footer__social-link" aria-label="Instagram">Instagram</a>
+                        <a href="https://wa.me/5491154056602" target="_blank" class="footer__social-link" aria-label="WhatsApp">WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Navegación</h4>
+                    <a href="#especialidades" class="footer__link">Especialidades</a>
+                    <a href="#menu" class="footer__link">Menú</a>
+                    <a href="#ambiente" class="footer__link">Ambiente</a>
+                    <a href="#momentos" class="footer__link">Momentos</a>
+                    <a href="#contacto" class="footer__link">Contacto</a>
+                </div>
+                
+                <div class="footer__info">
+                    <h4 class="footer__info-title">Información</h4>
+                    <p class="footer__info-item">Montevideo 960</p>
+                    <p class="footer__info-item">Recoleta Norte, Buenos Aires</p>
+                    <p class="footer__info-item">Lunes a Viernes: 8:30 - 19:00</p>
+                    <p class="footer__info-item">Sábados y Domingos: Cerrado</p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 Casa Carlota. Todos los derechos reservados.</p>
+                <a href="https://tuweben3dias.com" target="_blank" class="footer__credit">Diseñado por tuweben3dias.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/5491154056602?text=Hola%20Casa%20Carlota!%20Quisiera%20hacer%20una%20consulta" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contactar por WhatsApp"
+       data-animate>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
